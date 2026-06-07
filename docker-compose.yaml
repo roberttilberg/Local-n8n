@@ -98,8 +98,9 @@ services:
 
 volumes:
   n8n_data:
-    external: true
-    name: n8n_data
+# these lines are commented out to allow docker-compose to create the volumes automatically. If you want to use pre-existing volumes, uncomment these lines and set the correct volume names. 
+#    external: true
+#    name: n8n_data
   postgres_data:
   pgadmin_data:
   redis_data:
